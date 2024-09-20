@@ -10,7 +10,7 @@ const Footer = () => {
           <QuickLinks />
           <ContactUs />
         </div>
-        <div className="logo text-3xl font-semibold flex items-center w-full px-40" style={{ paddingRight: "6rem" }}>
+        <div className="logo text-xl lg:text-3xl font-semibold flex items-center w-full px-auto sm:px-40" style={{ paddingRight: "6rem" }}>
           ElephantTechLabs
         </div>
       </div>

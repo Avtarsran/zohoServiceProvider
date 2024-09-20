@@ -253,12 +253,30 @@ const About = () => {
         }`}
         id="aboutClients"
       >
-        <h2 className="text-3xl font-bold mb-8">Our Clients</h2>
-        <p className="text-lg mb-6">
-          We take pride in our diverse clientele, from startups to established
-          enterprises, who trust us to streamline their operations with Zoho
-          CRM.
-        </p>
+       <div className="container mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-8">Client Testimonials</h2>
+            <div className="relative">
+                <div className="absolute inset-0 bg-gray-200 bg-opacity-20"></div>
+                <div className="relative">
+                    <div className="flex flex-col space-y-6">
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <img src="https://img.freepik.com/premium-photo/man-with-glasses-gray-suit-with-white-shirt-gray-jacket_1308157-214466.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid"
+                                alt="Client 1" className="mx-auto w-44 h-44 mb-4 rounded-full" />
+                            <blockquote className="italic text-lg">“Their Zoho CRM setup transformed our sales process,
+                                making it easier to manage and track leads. They’re a game-changer!”</blockquote>
+                            <p className="mt-4 text-gray-600">– Client Name</p>
+                        </div>
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <img src="https://img.freepik.com/premium-photo/man-with-glasses-gray-suit-with-white-shirt-gray-jacket_1308157-214466.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid"
+                                alt="Client 2" className="mx-auto w-44 h-44 mb-4 rounded-full" />
+                            <blockquote className="italic text-lg">“Thanks to their expert team, we’ve saved countless hours
+                                on administrative tasks. Their CRM solutions are intuitive and scalable.”</blockquote>
+                            <p className="mt-4 text-gray-600">– Client Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </section>
 
       <section
