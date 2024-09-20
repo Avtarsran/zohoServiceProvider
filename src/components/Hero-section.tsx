@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col justify-center items-center col-span-2 md:col-span-1 my-5">
           <div className="font-semibold w-full sm:w-3/4 mt-32 sm:mt-0">
             <div
-              className="w-full sm:w-96 opacity-0 transform translate-y-5 transition-all duration-1000 ease-out bg-white text-3xl sm:text-5xl text-center sm:text-left"
+              className="w-full sm:w-96 opacity-0 transform translate-y-5 transition-all duration-1000 ease-out bg-transparent text-3xl sm:text-5xl text-center sm:text-left"
               id="animatedHeading"
             >
               Empowering Your Business with Customized Zoho Solutions
@@ -48,15 +48,7 @@ const HeroSection: React.FC = () => {
           />
         </div>
       </div>
-      <div
-        className="hero bg-cover bg-center -mt-96 h-screen sm:hidden"
-        style={{
-          background:
-            "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://elephanttechlabs.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
+    
     </>
   );
 };
