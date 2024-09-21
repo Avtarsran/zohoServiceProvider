@@ -66,9 +66,9 @@ const FinanceServices = () => {
               backgroundPosition: "center",
             }}
           >
-            <div className="container mx-auto p-4">
-              <div className="flex justify-center items-center h-full">
-                <div className="text-center">
+            <div className=" h-full mx-auto p-4">
+            <div className="flex justify-center items-center h-full">
+            <div className="text-center">
                   <h1 className="text-4xl font-bold">Zoho Finance Services</h1>
                   <p className="text-2xl">
                     We offer a variety of professional back-office accounting

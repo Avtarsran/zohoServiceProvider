@@ -73,7 +73,7 @@ const SupportPage = () => {
               backgroundPosition: 'center',
             }}
           >
-            <div className="container mx-auto p-4 pt-44">
+            <div className="container h-full mx-auto p-4 pt-44">
               <h2 className="text-4xl font-bold text-black">
                 Get the Most Out of Your Zoho CRM with Our Expert Support
               </h2>

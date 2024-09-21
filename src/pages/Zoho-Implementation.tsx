@@ -62,7 +62,7 @@ const Implementation = () => {
                             backgroundPosition: 'center',
                         }}
                     >
-                        <div className="container mx-auto p-4">
+                        <div className="h-full mx-auto p-4">
                             <div className="flex justify-center items-center h-full">
                                 <div className="text-center">
                                     <h1 className="text-4xl font-bold">Transform Your Business with Our Zoho Implementation Services</h1>
