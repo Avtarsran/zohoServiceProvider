@@ -295,9 +295,9 @@ const About = () => {
           transform the way you work.
         </p>
         <div className="cursor-pointer flex flex-col mx-auto border-4 rounded-lg w-52 border-white transition ease-in-out delay-150 hover:border-red-200 duration-150">
-          <div className="get-quote-btn px-3 py-2 bg-[#303841] rounded-lg border-4 border-white text-white transition ease-in-out delay-150 text-center hover:bg-red-500 duration-150">
+          <a href="/#contact" rel="home" className="get-quote-btn px-3 py-2 bg-[#303841] rounded-lg border-4 border-white text-white transition ease-in-out delay-150 text-center hover:bg-red-500 duration-150">
             Contact Us
-          </div>
+          </a>
         </div>
       </section>
       <Footer></Footer>
