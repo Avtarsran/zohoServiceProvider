@@ -25,13 +25,13 @@ const HeroSection: React.FC = () => {
         <div className="flex flex-col justify-center items-center col-span-2 md:col-span-1 my-5">
           <div className="font-semibold w-full sm:w-3/4 mt-32 sm:mt-0">
             <div
-              className="w-full sm:w-96 opacity-0 transform translate-y-5 transition-all duration-1000 ease-out bg-transparent text-3xl sm:text-5xl text-center sm:text-left"
+              className="w-full sm:w-96 opacity-0 transform translate-y-5 transition-all  duration-1000 ease-out font-bold text-3xl sm:text-5xl text-center sm:text-left"
               id="animatedHeading"
             >
               Empowering Your Business with Customized Zoho Solutions
             </div>
             <div
-              className="mt-5 text-lg opacity-0 transform translate-y-5 transition-all duration-1000 ease-out text-gray-500 text-center sm:text-left"
+              className="mt-5 w-full text-lg opacity-0 transform translate-y-5 transition-all  duration-1000 ease-out text-gray-500 text-center sm:text-left"
               id="animatedText"
             >
               At Elephant Tech Labs, we specialize in providing tailored Zoho
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
         <div className="justify-center items-center invisible md:visible md:flex absolute md:static">
           <img
             id="animatedImg"
-            className="opacity-0 transform -translate-y-8 transition-all duration-1000 ease-out w-96 bg-black"
+            className="opacity-0 transform -translate-y-8 transition-all duration-1000 ease-out w-3/4 bg-black"
             style={{ mixBlendMode: "color-burn" }}
             src="https://elephanttechlabs.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg"
             alt="Animated"
