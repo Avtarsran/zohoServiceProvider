@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
         <div className="justify-center items-center invisible md:visible md:flex absolute md:static">
           <img
             id="animatedImg"
-            className="opacity-0 transform -translate-y-8 transition-all duration-1000 ease-out w-3/4 bg-black"
+            className="opacity-0 transform -translate-y-8 transition-all duration-1000 ease-out w-3/4"
             style={{ mixBlendMode: "color-burn" }}
             src="https://elephanttechlabs.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg"
             alt="Animated"

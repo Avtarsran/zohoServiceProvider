@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import DarkButton from '../subComponents/DarkButton'
 
 const FeaturesSection = () => {
   return (
@@ -10,18 +10,7 @@ const FeaturesSection = () => {
         </div>
     </div>
     <div>
-        <div className="cursor-pointer mt-5 border-4 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-200
-                    duration-150">
-            <div className="get-quote-btn px-3 py-2 bg-[#303841] 
-                        rounded-lg border-4 border-white text-white transition ease-in-out delay-150
-                         text-center
-                        hover:bg-red-500
-                        duration-150">
-                <Link to="/about">
-                    See How
-                </Link>
-            </div>
-        </div>
+    <DarkButton aTag={false} buttonText="Read More" lgScreen={false} toLink="/about"></DarkButton>
     </div>
 </div>
 </div>

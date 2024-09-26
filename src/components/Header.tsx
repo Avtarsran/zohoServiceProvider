@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../subComponents/Button";
+import DarkButton from "../subComponents/DarkButton";
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -21,35 +23,22 @@ const Header = () => {
 
         {/* Middle navigations */}
         <div className="nav-middle invisible lg:visible absolute lg:static flex justify-between items-center w-80">
-          <div className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150">
-            <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg border-transparent hover:bg-red-200 hover:text-red-600 hover:rounded-lg duration-150">
-              <a href="/#serviceSection" rel="home">
-                Services
-              </a>
-            </div>
-          </div>
-          <div className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150">
-            <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg border-transparent hover:bg-red-200 hover:text-red-600 hover:rounded-lg duration-150">
-              <Link to="/about">About</Link>
-            </div>
-          </div>
-          <div className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150">
-            <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg border-transparent hover:bg-red-200 hover:text-red-600 hover:rounded-lg duration-150">
-              <a href="/#contact" rel="home">
-                Contact
-              </a>
-            </div>
-          </div>
+          <Button
+            aTag={true}
+            buttonText="Serivces"
+            toLink="/#serviceSection"
+          ></Button>
+          <Button aTag={false} buttonText="About" toLink="/about"></Button>
+          <Button aTag={true} buttonText="Contact" toLink="/#contact"></Button>
         </div>
 
         {/* Button with "Get a Quote" text */}
-        <div className="cursor-pointer border-4 invisible lg:visible absolute lg:static rounded-lg border-white transition ease-in-out delay-150 hover:border-red-200 duration-150">
-          <div className="get-quote-btn px-3 py-2 bg-[#303841] rounded-lg border-4 border-white text-white transition ease-in-out delay-150 text-center hover:bg-red-500 duration-150">
-            <a href="/#contact" rel="home">
-              Get a Quote
-            </a>
-          </div>
-        </div>
+        <DarkButton
+          lgScreen={true}
+          aTag={true}
+          buttonText="Get A Quote"
+          toLink="/#contact"
+        ></DarkButton>
 
         {/* Mobile menu toggle */}
         <button
@@ -78,44 +67,35 @@ const Header = () => {
       {/* Dropdown menu */}
       <div
         id="dropdownHover"
-        className={`z-10 mt-3 bg-white divide-y divide-gray-100 rounded-lg shadow mx-auto ${
+        className={`z-10 mt-3 bg-white divide-y divide-gray-100 rounded-lg lg:hidden shadow mx-auto ${
           dropdownVisible ? "" : "hidden"
         }`}
       >
         <ul className="py-2 text-sm text-gray-700 flex flex-col justify-center items-center">
-          <li>
-            <div className="border-2 mt-3 w-44 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150">
-              <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg border-transparent hover:bg-red-200 hover:text-red-600 hover:rounded-lg duration-150">
-                <a href="/#serviceSection" rel="home">
-                  Services
-                </a>
-              </div>
-            </div>
+          <li className="my-2">
+            <Button
+              aTag={true}
+              buttonText="Serivces"
+              toLink="/#serviceSection"
+            ></Button>
           </li>
-          <li>
-            <div className="border-2 mt-3 w-44 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150">
-              <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg border-transparent hover:bg-red-200 hover:text-red-600 hover:rounded-lg duration-150">
-                <Link to="/about">About</Link>
-              </div>
-            </div>
+          <li className="my-2">
+            <Button aTag={false} buttonText="About" toLink="/about"></Button>
           </li>
-          <li>
-            <div className="border-2 mt-3 w-44 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150">
-              <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg border-transparent hover:bg-red-200 hover:text-red-600 hover:rounded-lg duration-150">
-                <a href="/#contact" rel="home">
-                  Contact
-                </a>
-              </div>
-            </div>
+          <li className="my-2">
+            <Button
+              aTag={true}
+              buttonText="Contact"
+              toLink="/#contact"
+            ></Button>
           </li>
-          <li>
-            <div className="cursor-pointer border-4 w-44 mt-3 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-200 duration-150">
-              <div className="get-quote-btn px-3 py-2 bg-[#303841] rounded-lg border-4 border-white text-white transition ease-in-out delay-150 text-center hover:bg-red-500 duration-150">
-                <a href="/#contact" rel="home">
-                  Get a Quote
-                </a>
-              </div>
-            </div>
+          <li className="my-2">
+            <DarkButton
+              lgScreen={false}
+              aTag={true}
+              buttonText="Get A Quote"
+              toLink="/#contact"
+            ></DarkButton>
           </li>
         </ul>
       </div>
