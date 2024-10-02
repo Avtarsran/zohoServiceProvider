@@ -8,7 +8,7 @@ interface card {
 }
 const Card = ({img,title,description,toLink}:card) => {
   return (
-      <div className="flex w-3/4 lg:w-full mx-4 flex-col min-h-[23rem] border shadow-sm rounded-lg">
+      <div className="flex w-3/4 lg:w-full mx-4 flex-col min-h-[23rem] bg-white border shadow-sm rounded-lg">
         <div className="w-full h-2/5 flex justify-center items-center">
           <img
             src={img}

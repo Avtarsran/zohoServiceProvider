@@ -53,7 +53,7 @@ const Quotes = () => {
           <h1 className="text-3xl font-bold">From our users</h1>
           <div className="flex">
             <button
-              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[-5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150"
+              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 mr-3 hover:shadow-[0px_0px_0_3px_rgb(99.6%,79.2%,79.2%)] duration-150"
               onClick={showPrevCard}
             >
               <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg hover:bg-red-200 hover:text-red-600 duration-150">
@@ -63,7 +63,7 @@ const Quotes = () => {
               </div>
             </button>
             <button
-              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[5px_5px_0_0_rgb(99.6%,79.2%,79.2%)] duration-150"
+              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[0px_0px_0_3px_rgb(99.6%,79.2%,79.2%)] duration-150"
               onClick={showNextCard}
             >
               <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg hover:bg-red-200 hover:text-red-600 duration-150">
