@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import DarkButton from "../subComponents/DarkButton";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);

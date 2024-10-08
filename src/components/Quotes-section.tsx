@@ -18,7 +18,7 @@ const Quotes = () => {
     },
   ];
 
-  const triggerHeight = 1900;
+  const triggerHeight = 1700;
 
   const handleScroll = () => {
     if (window.scrollY > triggerHeight && !isVisible) {
