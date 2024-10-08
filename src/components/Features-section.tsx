@@ -3,13 +3,13 @@ import DarkButton from '../subComponents/DarkButton'
 const FeaturesSection = () => {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mt-32">
+      <div className="flex flex-col justify-center items-center my-32">
     <div>
-        <div className="text-3xl md:text-xl text-center font-semibold">
+        <div className="text-2xl md:text-3xl mx-3 text-center font-semibold">
             We help you automate your business
         </div>
     </div>
-    <div>
+    <div className='my-2'>
     <DarkButton aTag={false} buttonText="Read More" lgScreen={false} toLink="/about"></DarkButton>
     </div>
 </div>

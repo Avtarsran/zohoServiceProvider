@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <>
-      <div className="grid grid-cols-2 sm:block invisible sm:visible md:flex absolute sm:static">
+      <div className="grid grid-cols-2 invisible md:visible md:flex absolute md:static">
 
         <div className="flex flex-col justify-center items-center col-span-2 md:col-span-1 my-5">
           <div className="font-semibold w-full sm:w-3/4 mt-32 sm:mt-0">
@@ -47,18 +47,18 @@ const HeroSection: React.FC = () => {
             id="animatedImg"
             className="opacity-0 transform -translate-y-8 transition-all duration-1000 ease-out w-3/4"
             style={{ mixBlendMode: "color-burn" }}
-            src="https://elephanttechlabs.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg"
+            src="https://elephanttechlabs.wordpress.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg"
             alt="Animated"
           />
         </div>
       </div>
       <section
-      className={`hero sm:hidden bg-cover bg-center h-screen opacity-0 transform translate-y-5 transition-all duration-1000 ease-in ${
+      className={`hero md:hidden bg-cover bg-center h-screen opacity-0 transform translate-y-5 transition-all duration-1000 ease-in ${
         show ? 'opacity-100' : ''
       }`}
       id="creatorFront"
       style={{
-        background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://elephanttechlabs.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg')`,
+        background: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://elephanttechlabs.wordpress.com/wp-content/uploads/2024/08/vecteezy_doodle-font-z-rainbow-colors_26395717.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

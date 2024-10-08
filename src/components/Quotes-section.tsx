@@ -48,25 +48,25 @@ const Quotes = () => {
       id="quotes"
     >
       <div className="mb-6">
-        <p className="text-sm font-semibold text-gray-500">Quotes</p>
+        <p className="text-lg my-2 font-semibold text-gray-500">Quotes</p>
         <div className="flex justify-between">
-          <h1 className="text-3xl font-bold">From our users</h1>
+          <h1 className="text-4xl font-bold">From our users</h1>
           <div className="flex">
             <button
-              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 mr-3 hover:shadow-[0px_0px_0_3px_rgb(99.6%,79.2%,79.2%)] duration-150"
+              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 mr-3 hover:bg-red-200 hover:shadow-[0px_0px_0_3px_rgb(99.6%,79.2%,79.2%)] duration-150"
               onClick={showPrevCard}
             >
-              <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg hover:bg-red-200 hover:text-red-600 duration-150">
+              <div className="transition ease-in-out delay-150 px-5 py-3 text-center rounded-lg hover:bg-red-200 hover:text-red-600 duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                 </svg>
               </div>
             </button>
             <button
-              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:shadow-[0px_0px_0_3px_rgb(99.6%,79.2%,79.2%)] duration-150"
+              className="border-2 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-500 hover:bg-red-200 hover:shadow-[0px_0px_0_3px_rgb(99.6%,79.2%,79.2%)] duration-150"
               onClick={showNextCard}
             >
-              <div className="transition ease-in-out delay-150 px-3 py-2 text-center rounded-lg hover:bg-red-200 hover:text-red-600 duration-150">
+              <div className="transition ease-in-out delay-150 px-5 py-3 text-center rounded-lg hover:bg-red-200 hover:text-red-600  duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
@@ -79,14 +79,14 @@ const Quotes = () => {
         {cards.map((card, index) => (
           <div
             key={card.id}
-            className={`card bg-pink-50 p-6 rounded-lg ${index === currentCardIndex ? "" : "hidden"}`}
+            className={`card bg-pink-50 p-6 my-6 rounded-lg ${index === currentCardIndex ? "" : "hidden"}`}
           >
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 flex items-center justify-center bg-pink-100 rounded-full">
                 <span className="text-red-500 text-xl font-bold">99</span>
               </div>
             </div>
-            <p className="text-gray-900">{card.quote}</p>
+            <p className="text-gray-900 text-xl my-6">{card.quote}</p>
           </div>
         ))}
       </div>

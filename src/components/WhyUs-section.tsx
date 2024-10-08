@@ -23,23 +23,23 @@ const WhyUs = () => {
       style={{ backgroundColor: "#d3d6db" }}
       id="whyUs"
     >
-      <div className="flex flex-col items-center" style={{ padding: "0 2rem" }}>
+      <div className="flex flex-col items-center my-5" style={{ padding: "0 2rem" }}>
         <div className="text-3xl font-semibold text-[#3a4750]">Why choose us?</div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <ul className="mt-8 space-y-6">
+          <ul className="mt-8 space-y-16 text-xl">
             <li className="flex items-center">
               <div className="flex-shrink-0">
-                <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-[#ffb1bc]">
+                <span className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-[#ffb1bc]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-6"
+                    className=" size-8 "
                   >
                     <path
                       strokeLinecap="round"
@@ -63,14 +63,14 @@ const WhyUs = () => {
             </li>
             <li className="flex items-center">
               <div className="flex-shrink-0">
-                <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-[#ffb1bc]">
+                <span className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-[#ffb1bc]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-6"
+                    className="size-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -88,14 +88,14 @@ const WhyUs = () => {
             </li>
             <li className="flex items-center">
               <div className="flex-shrink-0">
-                <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-[#ffb1bc]">
+                <span className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-[#ffb1bc]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-6"
+                    className="size-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -115,17 +115,17 @@ const WhyUs = () => {
           </ul>
         </div>
         <div>
-          <ul className="mt-8 space-y-6">
+          <ul className="mt-8 space-y-16">
             <li className="flex items-center">
               <div className="flex-shrink-0">
-                <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-[#ffb1bc]">
+                <span className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-[#ffb1bc]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-6"
+                    className="size-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -144,14 +144,14 @@ const WhyUs = () => {
             </li>
             <li className="flex items-center">
               <div className="flex-shrink-0">
-                <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-[#ffb1bc]">
+                <span className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-[#ffb1bc]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-6"
+                    className="size-8"
                   >
                     <path
                       strokeLinecap="round"
@@ -169,14 +169,14 @@ const WhyUs = () => {
             </li>
             <li className="flex items-center">
               <div className="flex-shrink-0">
-                <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-[#ffb1bc]">
+                <span className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-[#ffb1bc]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-6"
+                    className="size-8"
                   >
                     <path
                       strokeLinecap="round"

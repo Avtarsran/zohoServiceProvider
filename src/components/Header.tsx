@@ -67,7 +67,7 @@ const Header = () => {
       {/* Dropdown menu */}
       <div
         id="dropdownHover"
-        className={`z-10 mt-3 bg-white divide-y divide-gray-100 rounded-lg lg:hidden shadow mx-auto ${
+        className={`z-10 mt-3 bg-white divide-y divide-gray-100 rounded-lg lg:hidden border-b-2 mx-auto ${
           dropdownVisible ? "" : "hidden"
         }`}
       >

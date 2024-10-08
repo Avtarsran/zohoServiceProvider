@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import DarkButton from "../subComponents/DarkButton";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -79,8 +80,8 @@ const Contact = () => {
               <label htmlFor="how-we-can-help" className="block text-lg mb-2">How we can help:</label>
               <textarea id="how-we-can-help" name="how-we-can-help" className="w-full p-2 border border-gray-400 rounded"></textarea>
             </div>
-            <div className="cursor-pointer border-4 rounded-lg border-white transition ease-in-out delay-150 hover:border-red-200 duration-150">
-              <div className="get-quote-btn px-3 py-2 bg-[#303841] rounded-lg border-4 border-white text-white transition ease-in-out delay-150 text-center hover:bg-red-500 duration-150">
+            <div className={`cursor-pointer border-4 rounded-xl border-transparent transition ease-in-out delay-150 hover:border-red-200 hover:bg-red-700 duration-150`}>
+              <div className="get-quote-btn px-3 py-2 bg-[#303841] rounded-xl  text-white transition ease-in-out delay-150 text-center hover:bg-red-700 duration-150">
                 Submit
               </div>
             </div>

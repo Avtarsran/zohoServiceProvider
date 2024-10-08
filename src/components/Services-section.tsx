@@ -29,7 +29,7 @@ const ServicesSection: React.FC = () => {
         Our Services
       </div>
 
-      <div className="flex flex-col md:flex-col lg:flex-row justify-between lg:justify-evenly w-full my-10 items-strech">
+      <div className="flex flex-col md:flex-col lg:flex-row justify-between lg:justify-evenly w-full my-10 items-center ">
         {/* Card 1 */}
         <Card img="https://img.freepik.com/free-vector/content-management-system-flat_23-2148807863.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid" title='Zoho Consulting & Implementation' description='As a Zoho Partner, we are here to simplify your life and build systems that fit YOUR growing business needs' toLink='/zoho-implementaion'></Card>
 

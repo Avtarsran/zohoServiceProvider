@@ -229,18 +229,18 @@ const CreatorTestimonials1 = () => {
 
   return (
     <div
-      className={`grid grid-cols-5 my-12 opacity-0 transform translate-y-5 transition-all duration-1000 ease-in ${
+      className={`grid gird-cols-1 sm:grid-cols-5 my-12 opacity-0 transform translate-y-5 transition-all duration-1000 ease-in ${
         show ? 'opacity-100' : ''
       }`}
       id="creatorTestimonials1"
     >
-      <div className="col-span-3 flex items-center justify-center">
+      <div className="col-span-1 sm:col-span-3 flex items-center justify-center mx-2">
         <img
           src="https://img.freepik.com/premium-photo/interactive-recruitment-dashboard-displaying-candidate-progress-hiring-metrics_1327465-1492.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid"
           alt="just an image"
         />
       </div>
-      <div className="p-4 mt-8 col-span-2 flex items-center justify-center flex-col">
+      <div className="p-4 mt-8 col-span-1 sm:col-span-2 flex items-center justify-center flex-col">
         <div className="bg-white rounded-lg shadow-md p-4 transform hover:translate-y-5 transition-all duration-400 ease-in">
           <h2 className="text-sm font-bold mb-4">
             "What the ElephantTechLabs team did with this is incredible... We take it for granted now, but just one year
@@ -278,18 +278,18 @@ const CreatorTestimonials2 = () => {
 
   return (
     <div
-      className={`grid grid-cols-5 opacity-0 transform translate-y-5 transition-all duration-1000 ease-in ${
+      className={`grid grid-cols-1 sm:grid-cols-5 opacity-0 transform translate-y-5 transition-all duration-1000 ease-in ${
         show ? 'opacity-100' : ''
       } mb-12`}
       id="creatorTestimonials2"
     >
-      <div className="col-span-3 flex items-center justify-center">
+      <div className="col-span-1 sm:col-span-3 flex items-center justify-center mx-2">
         <img
           src="https://img.freepik.com/free-vector/dashboard-user-panel_23-2148397663.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid"
           alt="just an image"
         />
       </div>
-      <div className="p-4 mt-8 col-span-2 flex flex-col justify-center items-center">
+      <div className="p-4 mt-8 col-span-1 sm:col-span-2 flex flex-col justify-center items-center">
         <div className="bg-white rounded-lg shadow-md p-4 transform hover:translate-y-5 transition-all duration-400 ease-in">
           <h2 className="text-sm font-bold mb-4">
             "What the ElephantTechLabs team did with this is incredible... We take it for granted now, but just one year
