@@ -26,23 +26,23 @@ const AboutUs = () => {
       <p className="text-lg mb-6">Empowering Small Businesses with Seamless Zoho CRM Solutions</p>
       <ul className="list-none mb-6">
         <li className="mb-2">
-          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/zoho-implementaion">
-            Zoho Implementation
+          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/services">
+          Zoho CRM Implementation
           </Link>
         </li>
         <li className="mb-2">
-          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/finance-services">
-            Zoho Finance
+          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/services">
+            Zoho One Solutions
           </Link>
         </li>
         <li className="mb-2">
-          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/creator-services">
-            Zoho Creator
+          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/services">
+            Zoho Cretor Solutions
           </Link>
         </li>
         <li className="mb-2">
-          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/support-maintainenece-services">
-            Zoho Support
+          <Link className="text-gray-600 hover:text-red-500 hover:underline" to="/services">
+            Zoho + Generative AI Integeration
           </Link>
         </li>
       </ul>
@@ -63,16 +63,6 @@ const QuickLinks = () => {
         </li>
         <li className="mb-2">
           <a href="#">
-            <InstagramIcon />
-          </a>
-        </li>
-        <li className="mb-2">
-          <a href="#">
-            <TwitterIcon />
-          </a>
-        </li>
-        <li className="mb-2">
-          <a href="#">
             <LinkedInIcon />
           </a>
         </li>
@@ -86,7 +76,6 @@ const ContactUs = () => {
   return (
     <div className="footer-column">
       <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-      <p className="text-lg mb-6">Easily contact us by filling a simple form.</p>
       <ul className="list-none mb-6">
         <li className="mb-2">
           <a href="mailto:info@example.com" className="text-gray-600 hover:text-gray-900">

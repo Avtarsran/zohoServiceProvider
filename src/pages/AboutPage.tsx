@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Contact from "../components/Contact-section";
 
 const About = () => {
   const [showSections, setShowSections] = useState({
@@ -55,7 +56,7 @@ const About = () => {
         }`}
       >
         <h1 className="text-4xl font-bold mb-2 text-[#303841]">
-          Empowering Small Businesses with Seamless Zoho CRM Solutions
+        Empowering Businesses with Zoho Solutions and Custom Integrations
         </h1>
         <p className="text-lg text-[#303841]">
           Automating Tasks, Driving Growth, and Enhancing Productivity for
@@ -90,9 +91,9 @@ const About = () => {
         </div>
         <div className="flex justify-center items-center">
           <img
-            src="https://img.freepik.com/free-vector/brainstorming-concept-landing-page_23-2148298375.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid"
+            src="https://img.freepik.com/free-vector/hand-drawn-flat-design-crm-illustration_23-2149383345.jpg?semt=ais_hybrid"
             alt="CRM Team"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg"
           />
         </div>
       </section>
@@ -189,7 +190,7 @@ const About = () => {
         </div>
       </section>
 
-      <section
+      {/* <section
         className={`container mx-auto px-6 py-12 bg-gray-300 text-[#303841] my-12 transition-all duration-1000 ease-in ${
           showSections.team
             ? "opacity-100 translate-y-0"
@@ -227,7 +228,7 @@ const About = () => {
             <p>Technical Lead</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section
         className={`container mx-auto px-6 py-12 text-center transition-all duration-1000 ease-in ${
@@ -237,15 +238,50 @@ const About = () => {
         }`}
         id="aboutJourney"
       >
-        <h2 className="text-3xl font-bold mb-8">Our Journey</h2>
+        <h2 className="text-3xl font-bold mb-8">What we offer</h2>
         <p className="text-lg mb-6">
-          From our humble beginnings to becoming a leading Zoho CRM service
-          provider, our journey has been fueled by our commitment to excellence
-          and client satisfaction.
+        Our comprehensive suite of services covers every aspect of Zoho implementation and integration
         </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho CRM Implementation</h3>
+            <p>Helping businesses manage their customer relationships more effectively with customized Zoho CRM setups.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho One Solutions</h3>
+            <p>
+            Implementing Zoho’s all-in-one suite of applications to streamline operations across all departments..
+            </p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho Analytics & Reporting</h3>
+            <p>Transforming data into actionable insights through advanced analytics and dynamic reporting.
+            </p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho Creator Solutions</h3>
+            <p>Building custom internal tools, portals, and mission-critical systems tailored to specific business needs.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho Integration Services</h3>
+            <p>Seamlessly integrating Zoho with other third-party tools to create a unified business ecosystem.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho + Generative AI Integration</h3>
+            <p>Harnessing the power of AI to automate workflows, enhance customer interactions, and drive innovation.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Zoho Training & Support</h3>
+            <p>Equipping teams with the skills and knowledge they need to maximize the use of Zoho’s tools.</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md text-[#303841]">
+            <h3 className="text-xl font-semibold mb-2">Tailored Solutions</h3>
+            <p>We offer tailored solutions according to Your requirement.</p>
+          </div>
+        </div>
       </section>
 
-      <section
+      {/* <section
         className={`container mx-auto px-6 py-12 text-center bg-gray-300 text-[#303841] transition-all duration-1000 ease-in ${
           showSections.clients
             ? "opacity-100 translate-y-0"
@@ -277,10 +313,10 @@ const About = () => {
                 </div>
             </div>
         </div>
-      </section>
+      </section> */}
 
       <section
-        className={`py-16 bg-white text-[#303841] text-center my-12 transition-all duration-1000 ease-in ${
+        className={`pt-16 bg-white text-[#303841] text-center my-12 transition-all duration-1000 ease-in ${
           showSections.contact
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"
@@ -288,18 +324,14 @@ const About = () => {
         id="aboutContact"
       >
         <h2 className="text-3xl font-bold mb-4">
-          Ready to streamline your business?
+        Let’s Work Together!
         </h2>
         <p className="text-lg mb-8">
-          Get in touch with us today and see how our Zoho CRM services can
-          transform the way you work.
+        Ready to take your business to the next level? Contact us today to learn how we can help you unlock the power of Zoho.
         </p>
-        <div className="cursor-pointer flex flex-col mx-auto border-4 rounded-lg w-52 border-white transition ease-in-out delay-150 hover:border-red-200 duration-150">
-          <a href="/#contact" rel="home" className="get-quote-btn px-3 py-2 bg-[#303841] rounded-lg border-4 border-white text-white transition ease-in-out delay-150 text-center hover:bg-red-500 duration-150">
-            Contact Us
-          </a>
-        </div>
+        
       </section>
+      <Contact></Contact>
       <Footer></Footer>
     </>
   );

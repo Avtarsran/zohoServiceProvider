@@ -23,12 +23,12 @@ const Header = () => {
 
         {/* Middle navigations */}
         <div className="nav-middle invisible lg:visible absolute lg:static flex justify-between items-center w-80">
-          <Button
-            aTag={true}
-            buttonText="Serivces"
-            toLink="/#serviceSection"
-          ></Button>
           <Button aTag={false} buttonText="About" toLink="/about"></Button>
+          <Button
+            aTag={false}
+            buttonText="Serivces"
+            toLink="/services"
+          ></Button>
           <Button aTag={true} buttonText="Contact" toLink="/#contact"></Button>
         </div>
 
@@ -73,14 +73,14 @@ const Header = () => {
       >
         <ul className="py-2 text-sm text-gray-700 flex flex-col justify-center items-center">
           <li className="my-2">
-            <Button
-              aTag={true}
-              buttonText="Serivces"
-              toLink="/#serviceSection"
-            ></Button>
+            <Button aTag={false} buttonText="About" toLink="/about"></Button>
           </li>
           <li className="my-2">
-            <Button aTag={false} buttonText="About" toLink="/about"></Button>
+            <Button
+              aTag={false}
+              buttonText="Serivces"
+              toLink={"/services"}
+            ></Button>
           </li>
           <li className="my-2">
             <Button

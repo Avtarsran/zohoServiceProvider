@@ -4,8 +4,8 @@ const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isImgVisible, setIsImgVisible] = useState(false);
 
-  const triggerHeight = 2100; // Change as needed
-  const imgTriggerHeight = 2200; // Change as needed
+  const triggerHeight = 1700; // Change as needed
+  const imgTriggerHeight = 1800; // Change as needed
 
   const handleScroll = () => {
     if (window.scrollY > triggerHeight && !isVisible) {
@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`p-4 transition-all duration-1000 ease-out bg-gray-100 ${
+      className={`p-4 py-8 transition-all duration-1000 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       }`}
       id="contact"
@@ -75,10 +75,7 @@ const Contact = () => {
               <label htmlFor="brief-description" className="block text-lg mb-2">Brief Description:</label>
               <textarea id="brief-description" name="brief-description" className="w-full p-2 border border-gray-400 rounded"></textarea>
             </div>
-            <div className="form-group mb-4">
-              <label htmlFor="how-we-can-help" className="block text-lg mb-2">How we can help:</label>
-              <textarea id="how-we-can-help" name="how-we-can-help" className="w-full p-2 border border-gray-400 rounded"></textarea>
-            </div>
+           
             <div className={`cursor-pointer border-4 rounded-xl border-transparent transition ease-in-out delay-150 hover:border-red-200 hover:bg-red-700 duration-150`}>
               <div className="get-quote-btn px-3 py-2 bg-[#303841] rounded-xl  text-white transition ease-in-out delay-150 text-center hover:bg-red-700 duration-150">
                 Submit
