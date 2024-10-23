@@ -61,17 +61,6 @@ const Contact = () => {
               <input type="url" id="website" name="website" className="w-full p-2 border border-gray-400 rounded" />
             </div>
             <div className="form-group mb-4">
-              <label htmlFor="services" className="block text-lg mb-2">Services:</label>
-              <select id="services" name="services" className="w-full p-2 border border-gray-400 rounded">
-                <option value="">Select a service</option>
-                <option value="service1">Service 1</option>
-                <option value="service2">Service 2</option>
-                <option value="service3">Service 3</option>
-                <option value="service4">Service 4</option>
-                <option value="service5">Service 5</option>
-              </select>
-            </div>
-            <div className="form-group mb-4">
               <label htmlFor="brief-description" className="block text-lg mb-2">Brief Description:</label>
               <textarea id="brief-description" name="brief-description" className="w-full p-2 border border-gray-400 rounded"></textarea>
             </div>
