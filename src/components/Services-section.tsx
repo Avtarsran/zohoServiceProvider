@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../subComponents/Card';
 import FeaturesSection from './Features-section';
+import { useLocation } from 'react-router-dom';
 
 const ServicesSection: React.FC = () => {
   const [hasTriggered, setHasTriggered] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const elementId = location.hash.replace('#', '');
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +54,7 @@ const ServicesSection: React.FC = () => {
         
 
         {/* Card 3 */}
-        <Card img='https://img.freepik.com/free-vector/qa-engineer-composition-with-programming-coding-symbols-flat-vector-illustration_1284-78159.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid' title='Zoho Creator Solutions' description='Learn how our team of skilled developers can create the perfect Zoho Creator Application for your business.' toLink='/services/#zoho-creator'></Card>
+        <Card img='https://img.freepik.com/free-vector/qa-engineer-composition-with-programming-coding-symbols-flat-vector-illustration_1284-78159.jpg?uid=R163239129&ga=GA1.1.215708907.1726218374&semt=ais_hybrid' title='Zoho Creator Solutions' description='Learn how our team of skilled developers can create the perfect Zoho Creator Application for your business.' toLink='/services#zoho-creator'></Card>
       
 
         {/* Card 4 */}
