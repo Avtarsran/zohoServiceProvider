@@ -1,6 +1,18 @@
+import { useLocation } from "react-router-dom";
 import DarkButton from "./DarkButton";
 
 const ServiceCard = ({ h1text, id, spantext, tagline, description, btntext, keypoints }: any) => {
+  const location = useLocation();
+
+  const onClickbutton = () => {
+    if (location.hash) {
+      const elementId = location.hash.replace('#', '');
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
   return (
     <div className="flex flex-col lg:flex-row w-full bg-white p-6 lg:p-8 my-4 rounded-lg items-center" id={id}>
       
@@ -42,12 +54,12 @@ const ServiceCard = ({ h1text, id, spantext, tagline, description, btntext, keyp
         </ul>
         
         {/* Button */}
-        <div className="mt-6 flex justify-start space-x-4">
+        <div onClick={onClickbutton} className="mt-6 flex justify-start space-x-4">
           <DarkButton
             lgScreen={false}
-            aTag={true}
+            aTag={false}
             buttonText={btntext}
-            toLink="/services/#contact"
+            toLink="/services#contact"
           />
         </div>
       </div>
