@@ -14,7 +14,7 @@ const FeaturesSection = () => {
             aTag={false}
             buttonText="Click here"
             lgScreen={false}
-            toLink="/services"
+            toLink="/services#moreServices"
           ></DarkButton>
         </div>
       </div>

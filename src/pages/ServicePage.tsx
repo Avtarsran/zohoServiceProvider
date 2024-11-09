@@ -1,10 +1,23 @@
+import { useLocation } from "react-router-dom";
 import Contact from "../components/Contact-section";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ServiceCard from "../subComponents/ServiceCard";
 import ServiceCard2 from "../subComponents/ServiceCard2";
+import { useEffect } from "react";
 
 const ServicePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const elementId = location.hash.replace('#', '');
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location.hash]); 
   return (
     <div>
       <Header></Header>
@@ -162,7 +175,7 @@ const ServicePage = () => {
         ></ServiceCard2>
 
         <div className="flex flex-col my-16 justify-center items-center">
-          <div>
+          <div id="moreServices">
             <div className="text-2xl md:text-3xl mx-3 text-center font-semibold">
               From Core to Custom: Elevating Your CRM with Additional Expertise
             </div>
