@@ -12,7 +12,6 @@ const ServicePage = () => {
   useEffect(() => {
     if (location.hash) {
       const elementId = location.hash.replace('#', '');
-      console.log(elementId)
       const element = document.getElementById(elementId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -24,7 +23,7 @@ const ServicePage = () => {
       <Header></Header>
       <div className="flex justify-center items-center flex-col">
         <ServiceCard
-          id={"zoho-implementaion"}
+          id={"zohoImplementaion"}
           h1text={"Zoho CRM "}
           spantext={"Implementation"}
           tagline={"Build Stronger Customer Relationships with Zoho CRM"}
@@ -63,7 +62,7 @@ const ServicePage = () => {
         <ServiceCard2
           h1text={" Zoho One "}
           id={
-            "zoho-solutions"
+            "zohoSolutions"
           }
           spantext={"Solutions"}
           tagline={"The All-in-One Business Operating System"}
@@ -101,7 +100,7 @@ const ServicePage = () => {
 
         <ServiceCard
           h1text={"Zoho Creator "}
-          id={"zoho-creator"}
+          id={"zohoCreator"}
           spantext={"Solutions"}
           tagline={"Build Custom Apps and Internal Tools with Zoho Creator"}
           description={
@@ -138,7 +137,7 @@ const ServicePage = () => {
 
         <ServiceCard2
           h1text={" Zoho + Generative "}
-          id={"zoho-generative"}
+          id={"zohoGenerative"}
           spantext={"AI Integration"}
           tagline={
             "Enhance Zoho with Generative AI – AI-Powered Workflows and Automations"
@@ -185,7 +184,7 @@ const ServicePage = () => {
 
         <ServiceCard
           h1text={"Zoho "}
-          id={"zoho-analytics"}
+          id={"zohoAnalytics"}
           spantext={"Analytics & Reporting"}
           tagline={"Make Data-Driven Decisions with Zoho Analytics"}
           description={
@@ -222,7 +221,7 @@ const ServicePage = () => {
 
         <ServiceCard2
           h1text={" Zoho "}
-          id={"zoho-integration"}
+          id={"zohoIntegration"}
           spantext={"Integration Services"}
           tagline={"Seamlessly Integrate Zoho with Your Existing Tools"}
           description={
@@ -258,7 +257,7 @@ const ServicePage = () => {
 
         <ServiceCard
           h1text={"Zoho "}
-          id={"zoho-training"}
+          id={"zohoTraining"}
           spantext={"Training & Support"}
           tagline={"Empower Your Team with Expert Zoho Training"}
           description={
