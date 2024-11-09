@@ -12,6 +12,7 @@ const ServicePage = () => {
   useEffect(() => {
     if (location.hash) {
       const elementId = location.hash.replace('#', '');
+      console.log(elementId)
       const element = document.getElementById(elementId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
