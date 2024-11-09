@@ -21,7 +21,7 @@ const Card = ({ img, title, description, toLink }: card) => {
         <div className="w-full flex lg:block  items-center justify-center">
         <DarkButton
             lgScreen={false}
-            aTag={true}
+            aTag={false}
             buttonText="Read More"
             toLink={toLink}
           />
