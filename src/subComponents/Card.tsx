@@ -7,7 +7,6 @@ interface card {
   toLink: string;
 }
 const Card = ({ img, title, description, toLink }: card) => {
- 
   return (
     <div className="flex w-3/4 lg:w-full mx-4 my-3 flex-col min-h-[23rem] bg-white border shadow-sm rounded-lg transition-transform duration-300 hover:scale-105">
       <div className="w-full min-h-[10rem] flex justify-center items-center">
@@ -17,9 +16,13 @@ const Card = ({ img, title, description, toLink }: card) => {
         <h5 className=" text-xl font-bold text-center lg:text-left tracking-tight">
           {title}
         </h5>
-        <p className=" font-normal text-gray-700">{description}</p>
+        <div className="">
+          <p className=" font-normal text-gray-700 align-text-top">
+            {description}
+          </p>
+        </div>
         <div className="w-full flex lg:block  items-center justify-center">
-        <DarkButton
+          <DarkButton
             lgScreen={false}
             aTag={false}
             buttonText="Read More"
