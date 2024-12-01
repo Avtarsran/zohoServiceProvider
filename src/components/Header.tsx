@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../subComponents/Button";
 import DarkButton from "../subComponents/DarkButton";
+import ell from "../assets/ell.png"
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -13,12 +14,14 @@ const Header = () => {
   return (
     <nav
       id="site-navigation"
-      className="w-full bg-white sticky z-50 top-0  p-8"
+      className="w-full bg-white sticky z-50 -top-10 pr-8 pl-8"
     >
-      <div className="flex justify-between items-center mt-3 -mb-3 w-full">
+      <div className="flex justify-between items-center -mt-3 -mb-3 w-full">
         {/* Logo text */}
-        <div className="logo text-3xl font-semibold">
-          <Link to="/">Elephant Techlabs</Link>
+        <div className="logo">
+          <Link to="/"><div className="w-44">
+            <img src={ell} alt="" />
+          </div></Link>
         </div>
 
         {/* Middle navigations */}
